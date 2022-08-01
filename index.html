@@ -6,7 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+.button {
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: white;
+  background-color: rgba(218, 119, 119, 0.849);
+  border-radius: 10px;
+}
+.button:hover {background-color: white;color: black;}
 
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+</style>
 
 </head>
 <!-- https://visme.co/blog/website-color-schemes/ -->
@@ -22,7 +40,7 @@
     <br>
     <center>
 
-        <table border="1" style="color: white; background-color: #84CEEB;">
+        <table border="1" style="color:black; background-color: #84CEEB; width: 80%; font-size: 22px;">
             <tr>
                 <th>S.No.</th>
                 <th>Title</th>
@@ -33,9 +51,12 @@
             <tr>
                 <td>1</td>
                 <td>Largest Cities in world</td>
-                <td><button>Site Link</button></td>
-                <td>Code Link</td>
+                <td><button class="button" onClick="
+                    parent.open('https://aashita920.github.io/Cities.github.io/')">Go to Site</button></td>
+                <td><button class="button" onClick="
+                    parent.open('https://github.com/Aashita920/Cities.github.io')">See the Code</button></td>
                 <td>Site Preview</td>
+                
 
             </tr>
             <tr>
